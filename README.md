@@ -2,7 +2,7 @@
 # Space Launch Pad Neighborhood
 
 ## Overview
-This app has a list of a few interesting launch pads and locations for launching of space rockets.
+This app has a list of a few interesting launch pads and locations for watching the launch of space rockets.
 You can view a live version of this app [here](https://luzr.github.io/neighborhood-map/).
 ## How to run
 Clone or download the .zip repo to your desktop and run the index.html
