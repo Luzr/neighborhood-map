@@ -1,0 +1,61 @@
+body {
+  font-family: Roboto,Arial,sans-serif;
+}
+
+.search {
+	width: 100%;
+}
+
+.search-box {
+	height: 50px;
+	font-size: 20px;
+	padding-left: 4px;
+	width: 300px;
+	position: relative; 
+	z-index: 1;
+}
+
+.app {
+	width: 100%;
+	height: 100%;
+}
+
+.list {
+	background-color: #6495ed;/*color from https://www.w3schools.com/colors/colors_picker.asp?colorhex=6495ED*/
+	height: relative;
+	position: absolute; 
+  	z-index: 1;
+}
+li:first-child{
+	margin-top: 0;
+}
+
+.map {
+  height: 100%; 
+  width: 100%; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  z-index: 0;
+}
+
+.content{
+	text-align: center;
+}
+
+.results {
+	margin: 0;
+	padding: 0;
+	min-width:300px;
+}
+
+.place {
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    background-color: #d1dffa;
+}
+/*remove Satellite view button*/
+.gm-style-mtc {
+  display: none;
+}

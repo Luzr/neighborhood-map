@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Space Launch Pad Neighborhood Map</title>
+	<link rel="stylesheet" href="css/style.css">
+ 	<link rel="stylesheet" href="css/offline-theme-default-indicator.css">
+ 	<link rel="stylesheet" href="css/offline-language-english-indicator.css">
+	<script>
+    var checkOffline = function(){
+   		if (Offline.state === 'up')
+   			Offline.check();
+  		}
+  	setInterval(checkOffline, 5000);	
+ 	</script>
+</head>
+<body>
+	<div class="search" id="search">
+		<input type="search" class="search-box" placeholder="Search the list below..." id="search-box" data-bind="textInput: searchTerm, valueUpdate: 'afterkeydown'" />
+	</div>
+	<div class="app" id="app">
+		<div class="list" id="list">
+			<ul class="results" id="results" data-bind="foreach: filteredList">
+				<li class="place" id="place" data-bind="text: name, click: bounce"></li>
+			</ul>
+		</div>
+		<div class="map" id="map"></div>
+	</div>
+
+	<script src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.1/knockout-min.js'></script>
+	<script src='js/app.js'></script>
+	<script src="js/offline.min.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxw7CFPXNVTQIiQnWBjOUEhLrRr-G8drI&callback=startApp&libraries=places" onerror="errorMessage()"></script>
+	<script>
+			// Offline Check url for status icon
+	Offline.options = 
+	{checks:
+		{xhr:
+			{url: 'https://luzr.github.io/neighborhood-map/index.html'}
+			}
+		};
+		</script>
+</body>
+</html>
