@@ -3,7 +3,7 @@
 
 ## Overview
 This app has a list of a few interesting launch pads and locations for launching space rockets.
-You can view a live version of this app [here](https://luzr.github.io/neighborhood-map-beta1/index.html).
+You can view a live version of this app [here](https://luzr.github.io/neighborhood-map/).
 ## How to run
 Clone or download the .zip repo to your desktop and run the index.html
 Features:
